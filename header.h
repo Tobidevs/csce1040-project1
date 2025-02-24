@@ -1,16 +1,21 @@
-#ifndef HEADER_H
-#define HEADER_H
+#ifndef Header_H
+#define Header_H
 
 #include <iostream>
-#include <string>
-#include <fstream>
-#include <cstdlib>
-#include <iomanip>
+#include <vector>
 #include <limits>
+#include <algorithm>
 
-using namespace std;
 
-void displayIntro();
-int getValidInt(const string& prompt);
+
+
+// Function prototypes
+void displayMenu();
+void displayNumbers(const std::vector<double>& numbers);
+void addNumber(std::vector<double>& numbers);
+void removeNumber(std::vector<double>& numbers);
+void computeAverage(const std::vector<double>& numbers);
+void computeMinimum(const std::vector<double>& numbers);
+void computeMaximum(const std::vector<double>& numbers);
 
 #endif
